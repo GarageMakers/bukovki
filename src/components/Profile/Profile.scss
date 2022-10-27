@@ -1,0 +1,56 @@
+@import "../../scss/colors.scss";
+
+.profile {
+    background-color: $content-background-color;
+    width: 100%;
+    max-width: 22rem;
+    padding: 1rem;
+    height: 100%;
+    border-radius: 10px;
+    &__header {
+        display: flex;
+        gap: 5%;
+        &__content {
+            &__header {
+                font-size: calc(16px + 6 * (100vw / 1440));
+                color: white;
+                font-weight: 700;
+            }
+
+            &__additional {
+                font-size: calc(12px + 4 * (100vw / 1440));
+                color: rgba(255, 255, 255, 0.5);
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__menu {
+        margin-top: 3rem;
+        padding-left: 1.6rem;
+        &__item {
+            display: flex;
+            gap: 5%;
+            margin-top: 1rem;
+            cursor: pointer;
+            position: relative;
+            &__active {
+                &::after {
+                    content: " ";
+                    background-color: $active-color;
+                    width: 0.2rem;
+                    height: 100%;
+                    position: absolute;
+                    left: -2.6rem;
+                    bottom: 0;
+                    border-radius: 10px;
+                }
+            }
+            &__header {
+                font-size: calc(12px + 5 * (100vw / 1440));
+                color: white;
+                font-weight: 400;
+            }
+        }
+    }
+}

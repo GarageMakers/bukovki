@@ -1,0 +1,71 @@
+@import "../../scss/colors.scss";
+
+.chat {
+    width: 40rem;
+    &__content {
+        background-color: $content-background-color;
+        border-radius: 10px;
+        height: 36rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        &__message {
+            display: flex;
+            align-items: flex-end;
+            gap: 1rem;
+            height: 80%;
+            &__block {
+                background-color: $page-background-color;
+                padding: 1rem;
+                border-radius: 10px 10px 10px 0;
+                width: 60%;
+                &__header {
+                    font-size: calc(12px + 4 * (100vw / 1440));
+                    font-weight: 500;
+                    color: $active-color;
+                }
+
+                &__text {
+                    font-size: calc(10px + 4 * (100vw / 1440));
+                    color: white;
+                    padding-top: 0.4rem;
+                    line-height: 21px;
+                }
+            }
+        }
+
+        &__input {
+            display: flex;
+            justify-content: space-between;
+            background-color: $page-background-color;
+            height: 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.8rem;
+            &__field {
+                outline: none;
+                border: none;
+                background-color: $page-background-color;
+                &::placeholder {
+                        font-size: calc(12px + 4 * (100vw / 1440));
+                        font-weight: 500;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                font-size: calc(12px + 4 * (100vw / 1440));
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.7);
+                padding-left: 1rem;
+            }
+        }
+    }
+
+    &__header {
+        font-size: calc(22px + 5 * (100vw / 1440));
+        font-weight: 700;
+        color: white;
+        padding-bottom: 1rem;
+    }
+}
