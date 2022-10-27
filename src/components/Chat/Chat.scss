@@ -2,6 +2,9 @@
 
 .chat {
     width: 40rem;
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
     &__content {
         background-color: $content-background-color;
         border-radius: 10px;
@@ -10,6 +13,10 @@
         padding-right: 4rem;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        overflow-y: scroll;
+        @media screen and (max-width: 1200px) {
+            padding: 1rem;
+        }
         &__message {
             display: flex;
             align-items: flex-end;
@@ -58,6 +65,9 @@
                 font-weight: 500;
                 color: rgba(255, 255, 255, 0.7);
                 padding-left: 1rem;
+                @media screen and (max-width: 1200px) {
+                    padding-left: 0rem;
+                }
             }
         }
     }
