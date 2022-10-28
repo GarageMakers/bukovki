@@ -2,7 +2,7 @@
     "ts-node": {
         // these options are overrides used only by ts-node
         "compilerOptions": {
-          "module": "commonjs"
+          "module": "commonjs",
         }
     },
     "compilerOptions": {
@@ -11,5 +11,10 @@
         "types": [
             "node"
         ]
-    }
+    },
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "exclude": ["node_modules", "build"],
 }
