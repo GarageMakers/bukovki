@@ -18,3 +18,7 @@ Description of the module.
 3. Create a database and configure the connection in the `.env` file
 4. Run migrations: `npm run typeorm migration:run`
 5. Run the project: `npm run dev`
+
+## Design
+
+* [Figma](https://www.figma.com/file/dWQLV0xVYxxIT6rOxNJ6e3/%D0%B6%D0%BA%D1%85?node-id=0%3A1)
