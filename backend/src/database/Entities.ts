@@ -1,3 +1,5 @@
+import { type } from "os";
+
 const typeorm = require("typeorm");
 
 @typeorm.Entity()
@@ -57,6 +59,20 @@ export class Users {
     @typeorm.Column({ type:'date' })
     BirthDate: string
 };
+
+@typeorm.Entity()
+export class chatMessages {
+    @typeorm.PrimaryGeneratedColumn()
+    MessageID: number
+
+    @typeorm.ManyToOne(type => Users, user => user.chatMessages) user: Users
+
+    @typeorm.Column()
+    Message: string
+
+    @typeorm.Column({ type:'date' })
+    Date: string
+}
 
 @typeorm.Entity()
 export class Achievements {
