@@ -13,9 +13,9 @@ export default function Chat() {
             <h1 className="chat__header">Чат</h1>
             <div className="chat__content">
                 <div className="chat__content__message">
-                    <Message></Message>
-                    <Message></Message>
-                    <Message></Message>
+                    <Message personal={false}></Message>
+                    <Message personal={false}></Message>
+                    <Message personal={true}></Message>
                 </div>
                 <div className="chat__content__input">
                     <input type="text" className="chat__content__input__field" placeholder="Напишите сообщение"/>

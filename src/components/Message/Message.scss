@@ -5,6 +5,10 @@
     padding: 1rem;
     border-radius: 10px 10px 10px 0;
     width: 60%;
+    &__personal {
+        margin-left: 3.8rem;
+        border-radius: 10px 10px 0px 10px;
+    }
     &__header {
         font-size: calc(12px + 4 * (100vw / 1440));
         font-weight: 500;

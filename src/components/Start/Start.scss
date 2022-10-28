@@ -1,0 +1,22 @@
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    &__welcome {
+        font-size: calc(22px + 5 * (100vw / 1440));
+        font-weight: 700;
+        color: white;
+    }
+
+    &__button {
+        background-color: #FF3951;
+        width: 12rem;
+        height: 3rem;
+        border-radius: 10px;
+        color: white;
+        font-size: calc(12px + 4 * (100vw / 1440));
+    }
+}

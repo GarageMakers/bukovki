@@ -1,13 +1,15 @@
 import React from 'react'
 
 import Chat from '../../components/Chat/Chat'
+import Profile from '../../components/Profile/Profile'
 
 export default function ChatPage() {
   return (
     <div>
-        <section className="chat__page">
-            <Chat></Chat>
-        </section>
+      <section className="chat__page" style={{display: "flex", gap: "2rem"}}>
+        <Profile></Profile>
+        <Chat></Chat>
+      </section>
     </div>
   )
 }
