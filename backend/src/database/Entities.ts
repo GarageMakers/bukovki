@@ -1,4 +1,5 @@
 const typeorm = require("typeorm");
+
 @typeorm.Entity()
 export class ManagmentCompanies {
     @typeorm.PrimaryGeneratedColuimn()
