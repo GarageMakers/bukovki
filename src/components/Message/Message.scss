@@ -1,0 +1,19 @@
+@import "../../scss/colors.scss";
+
+.message {
+    background-color: $page-background-color;
+    padding: 1rem;
+    border-radius: 10px 10px 10px 0;
+    width: 60%;
+    &__header {
+        font-size: calc(12px + 4 * (100vw / 1440));
+        font-weight: 500;
+        color: $active-color;
+    }   
+    &__text {
+        font-size: calc(10px + 4 * (100vw / 1440));
+        color: white;
+        padding-top: 0.4rem;
+        line-height: 21px;
+    }
+}

@@ -4,6 +4,8 @@ import ArrowSvg from './Image/ArrowSvg';
 
 import "./Chat.scss";
 
+import Message from "../Message/Message";
+
 export default function Chat() {
   return (
     <div>
@@ -11,11 +13,9 @@ export default function Chat() {
             <h1 className="chat__header">Чат</h1>
             <div className="chat__content">
                 <div className="chat__content__message">
-                    <ProfileSvg></ProfileSvg>
-                    <div className="chat__content__message__block">
-                        <h1 className="chat__content__message__block__header">Житель №3333</h1>
-                        <p className="chat__content__message__block__text">Текст-заполнитель — это текст, который имеет некоторые характеристики реального письменного текста, но является случайным набором слов или сгенерирован иным образом. Его можно использовать для отображения образца шрифтов, создания текста для тестирования или обхода спам-фильтра. </p>
-                    </div>
+                    <Message></Message>
+                    <Message></Message>
+                    <Message></Message>
                 </div>
                 <div className="chat__content__input">
                     <input type="text" className="chat__content__input__field" placeholder="Напишите сообщение"/>
