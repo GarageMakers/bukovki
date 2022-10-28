@@ -3,6 +3,7 @@ import { createConnection } from "typeorm";
 
 dotenv.config();
 
+const dbConnection = () => {
 (async () => {
     // Initialize a connection pool against the database.
     const connection = await createConnection({
@@ -14,3 +15,6 @@ dotenv.config();
       database: process.env.PGDATABASE,
     });
 });
+};
+
+dbConnection();
