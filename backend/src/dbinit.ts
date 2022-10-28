@@ -1,8 +1,7 @@
 import dotenv from "dotenv";
+import { createConnection } from "typeorm";
 
 dotenv.config();
-
-import { createConnection } from "typeorm";
 
 (async () => {
     // Initialize a connection pool against the database.
