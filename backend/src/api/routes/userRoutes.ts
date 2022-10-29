@@ -8,7 +8,7 @@ const usersRepository = dbConnection.getRepository(users);
 
 router.get("/", async (req, res) => {
     const users = await usersRepository.find()
-    res.send({usergroups: users})
+    res.send({users_: users})
 });
 
 module.exports = router;

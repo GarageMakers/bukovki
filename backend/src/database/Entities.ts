@@ -1,3 +1,5 @@
+import { Entity } from "typeorm";
+
 const typeorm = require("typeorm");
 @typeorm.Entity()
 export class managmentcompanies {
@@ -7,6 +9,8 @@ export class managmentcompanies {
     @typeorm.OneToMany(type => usersgroups, group => group.company) groups: usersgroups[]
 
     @typeorm.OneToMany(type => appeals, appeal => appeal.company) appeals: appeals[]
+
+    @typeorm.OneToMany(type => appealsmessages, msg => msg.company) msg: appealsmessages[]
 
     @typeorm.Column()
     name: string
@@ -40,6 +44,8 @@ export class users {
     @typeorm.ManyToOne(type => usersgroups, group => group.users) group: usersgroups
 
     @typeorm.OneToMany(type => appeals, appeal => appeal.user) appeal: appeals[]
+
+    @typeorm.OneToMany(type => appealsmessages, msg => msg.user) msg: appealsmessages[]
 
     @typeorm.Column()
     name: string
@@ -93,9 +99,26 @@ export class appeals {
 
     @typeorm.ManyToOne(type => users, user => user.appeals) user: users
 
+    @typeorm.OneToMany(type => appealsmessages, msg => msg.appeal) msgs: appealsmessages[]
+
     @typeorm.Column()
     text: string
 
     @typeorm.Column()
     header: string
 };
+
+@typeorm.Entity()
+export class appealsmessages {
+    @typeorm.PrimaryGeneratedColumn()
+    appealmsgid: number
+
+    @typeorm.OneToMany(type => appeals, appeal => appeal.appealmsg) appeal: appeals[]
+
+    @typeorm.ManyToOne(type => users, user => user.appealmsg) user: users
+
+    @typeorm.ManyToOne(type => managmentcompanies, company => company) company: managmentcompanies
+
+    @typeorm.Column()
+    text: string
+}
