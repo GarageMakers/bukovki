@@ -31,7 +31,7 @@ create table Users(
 create table Appeals(
     id int primary key,
     UserID int REFERENCES Users(id),
-    CompanyID int REFERENCES ManagmentCompanies(id),
+    companyid int REFERENCES ManagmentCompanies(id),
     Text varchar(1023) not null,
     Header varchar(255) not null,
     Status varchar(255) not null,
