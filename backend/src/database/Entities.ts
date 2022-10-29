@@ -54,7 +54,7 @@ export class users {
     phone: string
 
     @typeorm.Column({ type:'date' })
-    birthdate: string
+    birtddate: string
 };
 
 @typeorm.Entity()
