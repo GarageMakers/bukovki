@@ -36,3 +36,10 @@ create table Appeal(
     Status varchar(255) not null,
     Date date not null
 );
+
+create table Messages(
+    MessageID int primary key,
+    UserID int REFERENCES Users(UserID),
+    Text varchar(1023) not null,
+    Date date not null
+);
