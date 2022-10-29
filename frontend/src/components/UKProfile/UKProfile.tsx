@@ -26,7 +26,7 @@ export default function UKProfile() {
                 <h1 className="profile__menu__item__header">Профиль</h1>
               </div>
               </Link>
-              <Link to="/Sosedi/appeal" style={{textDecoration: "none"}}>
+              <Link to="/Sosedi/UK/appeal" style={{textDecoration: "none"}}>
               <div className="profile__menu__item">
                 <MessagesSvg></MessagesSvg>
                 <h1 className="profile__menu__item__header">Обращения</h1>

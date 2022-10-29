@@ -38,10 +38,10 @@ export default function Profile() {
                 <h1 className="profile__menu__item__header">Мои обращения</h1>
               </div>
               </Link>
-              <Link to="/" style={{textDecoration: "none"}}>
+              <Link to="/Sosedi/payments" style={{textDecoration: "none"}}>
               <div className="profile__menu__item">
                 <TopSvg></TopSvg>
-                <h1 className="profile__menu__item__header">Топ соседей</h1>
+                <h1 className="profile__menu__item__header">Мои счета</h1>
               </div>
               </Link>
             </section>
