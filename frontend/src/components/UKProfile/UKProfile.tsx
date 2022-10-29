@@ -29,7 +29,7 @@ export default function UKProfile() {
               <Link to="/Sosedi/appeal" style={{textDecoration: "none"}}>
               <div className="profile__menu__item">
                 <MessagesSvg></MessagesSvg>
-                <h1 className="profile__menu__item__header">Мои обращения</h1>
+                <h1 className="profile__menu__item__header">Обращения</h1>
               </div>
               </Link>
             </section>
