@@ -32,7 +32,7 @@ export default function Profile() {
                 <h1 className="profile__menu__item__header">Чат</h1>
               </div>
               </Link>
-              <Link to="/" style={{textDecoration: "none"}}>
+              <Link to="/Sosedi/appeal" style={{textDecoration: "none"}}>
               <div className="profile__menu__item">
                 <MessagesSvg></MessagesSvg>
                 <h1 className="profile__menu__item__header">Мои обращения</h1>
