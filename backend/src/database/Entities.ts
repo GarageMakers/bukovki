@@ -3,7 +3,7 @@ import { type } from "os";
 const typeorm = require("typeorm");
 @typeorm.Entity()
 export class ManagmentCompanies {
-    @typeorm.PrimaryGeneratedColuimn()
+    @typeorm.PrimaryGeneratedColumn()
     CompanyID: number
 
     @typeorm.OneToMany(type => UsersGroups, group => group.company) groups: UsersGroups[] 
