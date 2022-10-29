@@ -1,5 +1,3 @@
-import { type } from "os";
-
 const typeorm = require("typeorm");
 @typeorm.Entity()
 export class managmentcompanies {
@@ -53,18 +51,18 @@ export class users {
     password: string
 
     @typeorm.Column()
-    phoneNumber: string
+    phone: string
 
     @typeorm.Column({ type:'date' })
-    birthDate: string
+    birthdate: string
 };
 
 @typeorm.Entity()
-export class chatMessages {
+export class chatmessages {
     @typeorm.PrimaryGeneratedColumn()
     messageid: number
 
-    @typeorm.ManyToOne(type => users, user => user.chatMessages) user: users
+    @typeorm.ManyToOne(type => users, user => user.chatmessages) user: users
 
     @typeorm.Column()
     message: string

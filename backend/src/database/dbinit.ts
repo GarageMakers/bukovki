@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
 const typeorm = require("typeorm");
-import {Achievements, Appeals, ManagmentCompanies, Users, UsersGroups} from "./Entities"
+import {achievements, appeals, managmentcompanies, users, usersgroups} from "./Entities"
 
 dotenv.config();
 export const dbConnection = new typeorm.DataSource({
@@ -10,13 +10,13 @@ export const dbConnection = new typeorm.DataSource({
   username: process.env.PGUSER,
   password: process.env.PGPASSWORD,
   database: process.env.PGDATABASE,
-  entities: [Achievements, Appeals, ManagmentCompanies, Users, UsersGroups]
+  entities: [achievements, appeals, managmentcompanies, users, usersgroups]
 });
 
 dbConnection.initialize()
 .then( async () => {
   console.log("Connected")
 }
-).catch((err)  => console.log(` VLAD LOH${err}`));
+).catch((err)  => console.log(`${err}`));
 
 export default dbConnection;
