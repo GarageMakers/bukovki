@@ -1,0 +1,126 @@
+@import "../../scss/colors.scss";
+
+.personal {
+    &__content {
+        background-color: $content-background-color;
+        height: 26.9rem;
+        border-radius: 10px;
+        width: 40rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        gap: 2rem;
+        @media screen and (max-width: 1200px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+            height: fit-content;
+        }
+
+        &__left__side {
+            width: 50%;
+            @media screen and (max-width: 800px) {
+                width: 100%;
+            }
+            &__item {
+                &__header {
+                    font-size: calc(12px + 4 * (100vw / 1440));
+                    font-weight: 400;
+                    color: white;
+                }
+
+                &__input {
+                    border: none;
+                    outline: none;
+                    background: linear-gradient(0deg, #221830, #221830);
+                    height: 3.2rem;
+                    width: 100%;
+                    border-radius: 10px;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                    &::placeholder {
+                        font-size: calc(12px + 4 * (100vw / 1440));
+                        font-weight: 500;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    font-size: calc(12px + 4 * (100vw / 1440));
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, 0.7);
+                    padding-left: 1rem;
+                    @media screen and (max-width: 800px) {
+                        margin-bottom: 0rem;
+                        &:nth-child(2) {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+
+                &__button {
+                    border: none;
+                    outline: none;
+                    background-color: $content-background-color;
+                    font-size: calc(12px + 4 * (100vw / 1440));
+                    font-weight: 400;
+                    color: $active-color;
+                    cursor: pointer;
+                    margin-top: 1rem;
+                    margin-bottom: 5rem;
+                    transform: translateY(2.2rem);
+                    @media screen and (max-width: 800px) {
+                        margin-top: 0;
+                        padding: 0;
+                        margin-bottom: 4rem;
+                    }
+                }
+            }
+        }
+
+        &__right__side {
+            width: 50%;
+            @media screen and (max-width: 800px) {
+                width: 100%;
+            }
+            &__item {
+                &__header {
+                    font-size: calc(12px + 4 * (100vw / 1440));
+                    font-weight: 400;
+                    color: white;
+                }
+
+                &__input {
+                    border: none;
+                    outline: none;
+                    background: linear-gradient(0deg, #221830, #221830);
+                    height: 3.2rem;
+                    width: 100%;
+                    border-radius: 10px;
+                    margin-top: 1rem;
+                    margin-bottom: 2rem;
+                    &::placeholder {
+                        font-size: calc(12px + 4 * (100vw / 1440));
+                        font-weight: 500;
+                        color: rgba(255, 255, 255, 0.7);
+                    }
+                    font-size: calc(12px + 4 * (100vw / 1440));
+                    font-weight: 500;
+                    color: rgba(255, 255, 255, 0.7);
+                    padding-left: 1rem;
+                    @media screen and (max-width: 800px) {
+                        margin-top: 1rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &__header {
+        font-size: calc(22px + 5 * (100vw / 1440));
+        font-weight: 700;
+        color: white;
+        padding-bottom: 1rem;
+    }
+}

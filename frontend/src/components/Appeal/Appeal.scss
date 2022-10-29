@@ -1,0 +1,99 @@
+@import "../../scss/colors.scss";
+
+.appeal {
+    width: 40rem;
+    @media screen and (max-width: 800px) {
+        width: 100%;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+        &__item {
+            background-color: $content-background-color;
+            flex: 40%;
+            height: 10rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            gap: 1rem;
+            border-radius: 10px;
+            position: relative;
+            @media screen and (max-width: 800px) {
+                
+            }
+            &__header {
+                font-size: calc(12px + 4 * (100vw / 1440));
+                font-weight: 400;
+                color: white;
+                width: 80%;
+            }
+
+            &__additional {
+                font-size: calc(8px + 4 * (100vw / 1440));
+                font-weight: 400;
+                color: rgba(255,255,255,0.5);
+            }
+
+            &__status {
+                position: absolute;
+                top: 0;
+                right: 0;
+                background-color: red;
+                border-radius: 0px 0px 0px 10px;
+                padding: 0.2rem;
+                width: 6rem;
+                text-align: center;
+                font-size: calc(8px + 4 * (100vw / 1440));
+                font-weight: 400;
+                &__wait {
+                    background-color: #D9D9D9;
+                }
+
+                &__resolved {
+                    background-color: #3DA041;
+                }
+
+                &__unresolved {
+                    background-color: #FF3951;
+                }
+
+                &__none {
+                    display: none;
+                }
+            }
+        }
+
+        &__button {
+            height: 10rem;
+            flex: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid white;
+            border-radius: 10px;
+            font-size: calc(12px + 4 * (100vw / 1440));
+            font-weight: 400;
+            color: white;
+            width: 80%;
+            cursor: pointer;
+            @media screen and (max-width: 800px) {
+                width: 100%;
+                height: 14rem;
+                padding: 2rem;
+            }
+        }
+    }
+
+    &__header {
+        font-size: calc(22px + 5 * (100vw / 1440));
+        font-weight: 700;
+        color: white;
+        padding-bottom: 1rem;
+    }
+}
