@@ -10,7 +10,13 @@ export const dbConnection = new typeorm.DataSource({
   username: process.env.PGUSER,
   password: process.env.PGPASSWORD,
   database: process.env.PGDATABASE,
-  entities: ["./Entitites.ts"]
+  entities: [Achievements, Appeals, ManagmentCompanies, Users, UsersGroups]
 });
+
+dbConnection.initialize()
+.then( async () => {
+  console.log("Connected")
+}
+).catch((err)  => console.log(` VLAD LOH${err}`));
 
 export default dbConnection;

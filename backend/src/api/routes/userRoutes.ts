@@ -4,12 +4,13 @@ const typeorm = require("typeorm")
 const express = require("express")
 const router = express.Router()
 
-// const dbConnection = typeorm.getConnection();
 const usersRepository = dbConnection.getRepository(Users);
 
 router.get("/", async (req, res) => {
+    // dbConnection.connect()
     const users = await usersRepository.find()
     res.send({userGroups: `${users}`})
+    // dbConnection.release()
 });
 
 module.exports = router;
