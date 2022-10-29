@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Sosedi/static/css/main.9e714ae5.css",
-    "main.js": "/Sosedi/static/js/main.b3fa253d.js",
-    "index.html": "/Sosedi/index.html",
-    "main.9e714ae5.css.map": "/Sosedi/static/css/main.9e714ae5.css.map",
-    "main.b3fa253d.js.map": "/Sosedi/static/js/main.b3fa253d.js.map"
+    "main.css": "/bukovki/Sosedi/static/css/main.9e714ae5.css",
+    "main.js": "/bukovki/Sosedi/static/js/main.b3fa253d.js",
+    "index.html": "/bukovki/Sosedi/index.html",
+    "main.9e714ae5.css.map": "/bukovki/Sosedi/static/css/main.9e714ae5.css.map",
+    "main.b3fa253d.js.map": "/bukovki/Sosedi/static/js/main.b3fa253d.js.map"
   },
   "entrypoints": [
     "static/css/main.9e714ae5.css",
