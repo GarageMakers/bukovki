@@ -37,9 +37,10 @@ create table Appeal(
     Date date not null
 );
 
-create table Messages(
-    MessageID int primary key,
-    UserID int REFERENCES Users(UserID),
-    Text varchar(1023) not null,
-    Date date not null
-);
+insert into ManagmentCompanies values (1, 'admin', 'admin');
+insert into UsersGroups values (1, 'admin', 1);
+insert into Achievements values (1, 'admin', 'admin');
+insert into Users values (1, 'admin', 'admin', 'admin', '1999-01-01', 1, 1, 'admin', 'admin');
+insert into Users values (2, 'nik', 'bulkin', 'user', '1999-01-01', 1, 1, 'user', 'info');
+insert into Appeal values (1, 1, 'admin', 'admin', 'admin', '1999-01-01');
+

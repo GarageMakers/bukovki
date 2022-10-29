@@ -1,13 +1,10 @@
 import server from "./server";
-import dbConnection from "./dbinit";
-require('dotenv').config();
+const dotenv = require("dotenv");
+
+dotenv.config()
 
 const startServer = async () => {
-
-    dbConnection()
-    console.log(
-      `\nDataBase connected on port: ${process.env.PGPORT}\n`
-    )
+  try {
     const app = await server();
     app?.listen(process.env.EXPPORT, () => {
       console.log(

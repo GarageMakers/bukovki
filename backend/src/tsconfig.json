@@ -1,4 +1,12 @@
 {
+    "ts-node": {
+        // these options are overrides used only by ts-node
+        "compilerOptions": {
+          "module": "commonjs",
+          "emitDecoratorMetadata": true,
+        }
+    },
+    
     "compilerOptions": {
         "experimentalDecorators": true,
         "target": "es6",
