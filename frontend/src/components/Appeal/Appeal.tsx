@@ -17,7 +17,7 @@ export default function Appeal() {
             <p className="appeal__content__item__additional">
               Дата обращения: 13.06.2020
             </p>
-            <div className="appeal__content__item__status">
+            <div className="appeal__content__item__status appeal__content__item__status__wait">
                 <p className="appeal__content__item__status__text">Ожидание</p>
             </div>
           </div>
@@ -28,7 +28,7 @@ export default function Appeal() {
             <p className="appeal__content__item__additional">
               Дата обращения: 13.06.2020
             </p>
-            <div className="appeal__content__item__status">
+            <div className="appeal__content__item__status appeal__content__item__status__resolved">
                 <p className="appeal__content__item__status__text">Решено</p>
             </div>
           </div>
@@ -39,7 +39,7 @@ export default function Appeal() {
             <p className="appeal__content__item__additional">
               Дата обращения: 13.06.2020
             </p>
-            <div className="appeal__content__item__status">
+            <div className="appeal__content__item__status appeal__content__item__status__none">
                 <p className="appeal__content__item__status__text"></p>
             </div>
           </div>
@@ -50,7 +50,7 @@ export default function Appeal() {
             <p className="appeal__content__item__additional">
               Дата обращения: 13.06.2020
             </p>
-            <div className="appeal__content__item__status">
+            <div className="appeal__content__item__status appeal__content__item__status__unresolved">
                 <p className="appeal__content__item__status__text">Не решено</p>
             </div>
           </div>

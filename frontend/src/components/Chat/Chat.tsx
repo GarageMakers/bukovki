@@ -4,7 +4,7 @@ import ArrowSvg from './Image/ArrowSvg';
 
 import "./Chat.scss";
 
-import Message from "../Message/Message";
+import Message from "../Common/Message/Message";
 
 export default function Chat() {
   return (
