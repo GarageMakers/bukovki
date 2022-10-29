@@ -3,102 +3,102 @@ import "reflect-metadata";
 
 const typeorm = require("typeorm");
 @typeorm.Entity()
-export class ManagmentCompanies {
+export class managmentcompanies {
     @typeorm.PrimaryGeneratedColumn()
-    CompanyID: number
+    companyid: number
 
-    @typeorm.OneToMany(type => UsersGroups, group => group.company) groups: UsersGroups[]
+    @typeorm.OneToMany(type => usersgroups, group => group.company) groups: usersgroups[]
 
-    @typeorm.OneToMany(type => Appeals, appeal => appeal.company) appeals: Appeals[]
-
-    @typeorm.Column()
-    Name: string
+    @typeorm.OneToMany(type => appeals, appeal => appeal.company) appeals: appeals[]
 
     @typeorm.Column()
-    Password: string
+    name: string
+
+    @typeorm.Column()
+    password: string
 };
 
 @typeorm.Entity()
-export class UsersGroups {
+export class usersgroups {
     @typeorm.PrimaryGeneratedColumn()
-    GroupID: number
+    groupid: number
 
-    @typeorm.OneToMany(type => UsersGroups, user => user.group) group: Users[]
+    @typeorm.OneToMany(type => usersgroups, user => user.group) group: users[]
 
-    @typeorm.ManyToOne(type => ManagmentCompanies, company => company.groups) company: ManagmentCompanies
+    @typeorm.ManyToOne(type => managmentcompanies, company => company.groups) company: managmentcompanies
 
     @typeorm.Column()
-    Name: string
+    name: string
 
 
 };
 
 @typeorm.Entity()
-export class Users {
+export class users {
     @typeorm.PrimaryGeneratedColumn()
-    UserID: number
+    userid: number
 
-    @typeorm.OneToMany(type => Achievements, achievement => achievement.user) achievement: Achievements[] 
+    @typeorm.OneToMany(type => achievements, achievement => achievement.user) achievement: achievements[] 
 
-    @typeorm.ManyToOne(type => UsersGroups, group => group.users) group: UsersGroups
+    @typeorm.ManyToOne(type => usersgroups, group => group.users) group: usersgroups
 
-    @typeorm.OneToMany(type => Appeals, appeal => appeal.user) appeal: Appeals[]
-
-    @typeorm.Column()
-    Name: string
+    @typeorm.OneToMany(type => appeals, appeal => appeal.user) appeal: appeals[]
 
     @typeorm.Column()
-    Surname: string
+    name: string
 
     @typeorm.Column()
-    Password: string
+    surname: string
 
     @typeorm.Column()
-    PhoneNumber: string
+    password: string
+
+    @typeorm.Column()
+    phoneNumber: string
 
     @typeorm.Column({ type:'date' })
-    BirthDate: string
+    birthDate: string
 };
 
 @typeorm.Entity()
 export class chatMessages {
     @typeorm.PrimaryGeneratedColumn()
-    MessageID: number
+    messageid: number
 
-    @typeorm.ManyToOne(type => Users, user => user.chatMessages) user: Users
+    @typeorm.ManyToOne(type => users, user => user.chatMessages) user: users
 
     @typeorm.Column()
-    Message: string
+    message: string
 
     @typeorm.Column({ type:'date' })
-    Date: string
+    date: string
 }
 
 @typeorm.Entity()
-export class Achievements {
+export class achievements {
     @typeorm.PrimaryGeneratedColumn()
-    AchievementID: number
+    achievementid: number
 
-    @typeorm.ManyToOne(type => Users, user => user.achievements) user: Users
+    @typeorm.ManyToOne(type => users, user => user.achievements) user: users
 
     @typeorm.Column()
-    Text: string
+    text: string
     
 
 };
 
 @typeorm.Entity()
-export class Appeals {
+export class appeals {
     @typeorm.PrimaryGeneratedColumn()
-    CompanyID: number
+    companyid: number
 
-    @typeorm.ManyToOne(type => ManagmentCompanies, company => company.groups) company: ManagmentCompanies
+    @typeorm.ManyToOne(type => managmentcompanies, company => company.groups) company: managmentcompanies
 
-    @typeorm.ManyToOne(type => Users, user => user.appeals) user: Users
-
-    @typeorm.Column()
-    Text: string
+    @typeorm.ManyToOne(type => users, user => user.appeals) user: users
 
     @typeorm.Column()
-    Header: string
+    text: string
+
+    @typeorm.Column()
+    header: string
 };
