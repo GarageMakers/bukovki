@@ -6,10 +6,8 @@ const server = async () => {
   try {
     await app
     return app;
-  } catch (err) {
-    console.log(`Error in server.ts encountered`)
-    console.log(err)
-    return err;
+  } catch (error) {
+    console.log(`Error in server.ts encountered`, error)
   }
 };
 
