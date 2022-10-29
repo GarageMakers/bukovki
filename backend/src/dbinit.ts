@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import { createConnection } from "typeorm";
+import { Achievements, Appeals, ManagmentCompanies, Users, UsersGroups } from "./database/Entities";
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ const dbConnection = () => {
       username: process.env.PGUSER,
       password: process.env.PGPASSWORD,
       database: process.env.PGDATABASE,
+      entities: [ Users, ManagmentCompanies, UsersGroups, Appeals, Achievements ], 
     });
 });
 };

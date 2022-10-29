@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon -w src --ext ts --exec ts-node backend/src/dbinit.ts"
+    "start": "nodemon -w src --ext ts --exec ts-node ./src/dbinit.ts"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -9,6 +9,7 @@
     "nodemon": "^2.0.20",
     "pg": "^8.8.0",
     "pg-hstore": "^2.3.4",
+    "reflect-metadata": "^0.1.13",
     "sequelize": "^6.25.3",
     "ts-node": "^10.9.1",
     "typeorm": "^0.3.10"
