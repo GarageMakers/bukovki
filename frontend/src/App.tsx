@@ -17,14 +17,14 @@ function App() {
       <div className="content">
         <div className="wrapper">
           <Routes>
-            <Route path="/bukovki/sosedi" element={<LoginPage></LoginPage>}></Route>
-            <Route path="/bukovki/sosedi/profile" element={<PersonalPage></PersonalPage>}></Route>
-            <Route path="/bukovki/sosedi/chat" element={<ChatPage></ChatPage>}></Route>
-            <Route path="/bukovki/sosedi/appeal" element={<AppealPage></AppealPage>}></Route>
-            <Route path="/bukovki/sosedi/appeal/create" element={<CreateAppealPage></CreateAppealPage>}></Route>
-            <Route path="/bukovki/sosedi/uk/profile" element={<UKPersonalPage></UKPersonalPage>}></Route>
-            <Route path="/bukovki/sosedi/uk/appeal" element={<UKAppealPage></UKAppealPage>}></Route>
-            <Route path="/bukovki/sosedi/payments" element={<PaymentsPage></PaymentsPage>}></Route>
+            <Route path="/Sosedi" element={<LoginPage></LoginPage>}></Route>
+            <Route path="/Sosedi/profile" element={<PersonalPage></PersonalPage>}></Route>
+            <Route path="/Sosedi/chat" element={<ChatPage></ChatPage>}></Route>
+            <Route path="/Sosedi/appeal" element={<AppealPage></AppealPage>}></Route>
+            <Route path="/Sosedi/appeal/create" element={<CreateAppealPage></CreateAppealPage>}></Route>
+            <Route path="/Sosedi/UK/profile" element={<UKPersonalPage></UKPersonalPage>}></Route>
+            <Route path="/Sosedi/UK/appeal" element={<UKAppealPage></UKAppealPage>}></Route>
+            <Route path="/Sosedi/payments" element={<PaymentsPage></PaymentsPage>}></Route>
           </Routes>
         </div>
       </div>

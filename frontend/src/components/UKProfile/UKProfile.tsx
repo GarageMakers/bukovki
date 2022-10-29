@@ -20,13 +20,13 @@ export default function UKProfile() {
                 </div>
             </header>
             <section className="profile__menu">
-              <Link to="/bukovki/sosedi/uk/profile" style={{textDecoration: "none"}}>
+              <Link to="/Sosedi/uk/profile" style={{textDecoration: "none"}}>
               <div className="profile__menu__item profile__menu__item__active">
                 <ProfileSvg></ProfileSvg>
                 <h1 className="profile__menu__item__header">Профиль</h1>
               </div>
               </Link>
-              <Link to="/bukovki/sosedi/uk/appeal" style={{textDecoration: "none"}}>
+              <Link to="/Sosedi/uk/appeal" style={{textDecoration: "none"}}>
               <div className="profile__menu__item">
                 <MessagesSvg></MessagesSvg>
                 <h1 className="profile__menu__item__header">Обращения</h1>
