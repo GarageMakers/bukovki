@@ -36,3 +36,11 @@ create table Appeal(
     Status varchar(255) not null,
     Date date not null
 );
+
+insert into ManagmentCompanies values (1, 'admin', 'admin');
+insert into UsersGroups values (1, 'admin', 1);
+insert into Achievements values (1, 'admin', 'admin');
+insert into Users values (1, 'admin', 'admin', 'admin', '1999-01-01', 1, 1, 'admin', 'admin');
+insert into Users values (2, 'nik', 'bulkin', 'user', '1999-01-01', 1, 1, 'user', 'info');
+insert into Appeal values (1, 1, 'admin', 'admin', 'admin', '1999-01-01');
+

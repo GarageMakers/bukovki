@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon -w src --ext ts --exec ts-node backend/src/database/dbinit.ts"
+    "start": "nodemon -w src --ext ts --exec ts-node ./src/app.ts"
   },
   "dependencies": {
     "bcrypt": "^5.1.0",
