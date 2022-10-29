@@ -7,7 +7,7 @@ export class ManagmentCompanies {
     @typeorm.PrimaryGeneratedColumn()
     CompanyID: number
 
-    @typeorm.OneToMany(type => UsersGroups, group => group.company) groups: UsersGroups[] 
+    @typeorm.OneToMany(type => UsersGroups, group => group.company) groups: UsersGroups[]
 
     @typeorm.OneToMany(type => Appeals, appeal => appeal.company) appeals: Appeals[]
 
