@@ -9,7 +9,10 @@
         ]
     },
     "resolveJsonModule": true,
+    "strict": false,
     "isolatedModules": true,
     "noEmit": true,
     "exclude": ["node_modules", "build"],
+    "emitDecoratorMetadata": true,
+    "lib": ["es5", "es6", "dom"],  
 }
