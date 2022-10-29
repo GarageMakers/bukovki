@@ -1,13 +1,13 @@
 create table ManagmentCompanies (
     CompanyID int primary key,
     name varchar(255) not null,
-    password varchar(255) not null,
+    password varchar(255) not null
 );
 
 create table UsersGroups(
     GroupID int primary key,
     Name varchar(255) not null,
-    CompanyID int REFERENCES ManagmentCompanies(CompanyID),
+    CompanyID int REFERENCES ManagmentCompanies(CompanyID)
 );
 
 create table Achievements(

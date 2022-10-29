@@ -8,13 +8,13 @@ const dbConnection = () => {
     // Initialize a connection pool against the database.
     const connection = await createConnection({
       type: "postgres",
-      host: "localhost",
-      port: 5432,
-      username: "postgres",
+      host: process.env.PGHOST,
+      port: parseInt(process.env.PGPORT, 10),
+      username: process.env.PGUSER,
       password: process.env.PGPASSWORD,
       database: process.env.PGDATABASE,
     });
 });
 };
 
-dbConnection();
+export default dbConnection;
