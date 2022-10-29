@@ -13,7 +13,7 @@ function dbConnection () {
     const connection = await typeorm.createConnection({
       type: "postgres",
       host: process.env.PGHOST,
-      port: "5432",
+      port: parseInt(process.env.PGPORT, 10),
       username: process.env.PGUSER,
       password: process.env.PGPASSWORD,
       database: process.env.PGDATABASE,
