@@ -5,7 +5,6 @@ const express = require("express")
 const router = express.Router()
 
 const usersRepository = dbConnection.getRepository(users);
-const appealsRepository = dbConnection.getRepository(appeals);
 
 router.get("/", async (req, res) => {
     const users = await usersRepository.find()

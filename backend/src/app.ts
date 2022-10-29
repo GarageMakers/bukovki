@@ -4,7 +4,6 @@ const dotenv = require("dotenv");
 dotenv.config()
 
 const startServer = async () => {
-  try {
     const app = await server();
     app?.listen(process.env.EXPPORT, () => {
       console.log(

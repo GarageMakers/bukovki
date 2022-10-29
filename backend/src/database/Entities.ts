@@ -18,7 +18,7 @@ export class managmentcompanies {
 @typeorm.Entity()
 export class usersgroups {
     @typeorm.PrimaryGeneratedColumn()
-    groupid: number
+    usergroupid: number
 
     @typeorm.OneToMany(type => usersgroups, user => user.group) group: users[]
 
@@ -60,7 +60,7 @@ export class users {
 @typeorm.Entity()
 export class chatmessages {
     @typeorm.PrimaryGeneratedColumn()
-    messageid: number
+    chatmessageid: number
 
     @typeorm.ManyToOne(type => users, user => user.chatmessages) user: users
 
@@ -87,9 +87,9 @@ export class achievements {
 @typeorm.Entity()
 export class appeals {
     @typeorm.PrimaryGeneratedColumn()
-    companyid: number
+    appealsid: number
 
-    @typeorm.ManyToOne(type => managmentcompanies, company => company.groups) company: managmentcompanies
+    @typeorm.ManyToOne(type => managmentcompanies, company => company.appeals) company: managmentcompanies
 
     @typeorm.ManyToOne(type => users, user => user.appeals) user: users
 
