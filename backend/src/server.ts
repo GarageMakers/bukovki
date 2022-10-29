@@ -5,7 +5,7 @@ const usersRouter = require("./api/routes/userRoutes")
 
 const server = async () => {
   const app = express()
-  app.use('/api/users', usersRouter)
+  app.use('/', usersRouter)
   try {
     await app
   } catch (error) {
