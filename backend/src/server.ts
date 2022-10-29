@@ -1,8 +1,9 @@
 const express = require("express");
 const dotenv = require("dotenv");
+import { routedApp } from "./api/routes/commonRoutes" 
 
 const server = async () => {
-  const app = express();
+  const app = routedApp
   const api = require("./api/routes")(app)
   try {
     await app
