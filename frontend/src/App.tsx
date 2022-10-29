@@ -7,6 +7,7 @@ import ChatPage from "./pages/ChatPage/ChatPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import AppealPage from "./pages/AppealPage/AppealPage";
 import CreateAppealPage from "./pages/CreateAppealPage/CreateAppealPage";
+import UKPersonalPage from "./pages/UKPersonalPage/UKPersonalPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/Sosedi/chat" element={<ChatPage></ChatPage>}></Route>
             <Route path="/Sosedi/appeal" element={<AppealPage></AppealPage>}></Route>
             <Route path="/Sosedi/appeal/create" element={<CreateAppealPage></CreateAppealPage>}></Route>
+            <Route path="/Sosedi/UK/profile" element={<UKPersonalPage></UKPersonalPage>}></Route>
           </Routes>
         </div>
       </div>
