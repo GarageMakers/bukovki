@@ -3,6 +3,8 @@ import React from 'react'
 import Chat from '../../components/Chat/Chat'
 import Profile from '../../components/Profile/Profile'
 
+import "./ChatPage.scss"
+
 export default function ChatPage() {
   return (
     <div>

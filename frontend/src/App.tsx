@@ -2,12 +2,9 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.scss";
 
-import Profile from "./components/Profile/Profile";
-
-import LoginPage from "./pages/LoginPage/LoginPage";
+import PersonalPage from "./pages/PersonalPage/PersonalPage";
 import ChatPage from "./pages/ChatPage/ChatPage";
-import Test from "./pages/Test/Test";
-import StartPage from "./pages/StartPage/StartPage";
+import LoginPage from "./pages/LoginPage/LoginPage";
 
 function App() {
   return (
@@ -15,10 +12,9 @@ function App() {
       <div className="content">
         <div className="wrapper">
           <Routes>
-            <Route path="/Sosedi/login" element={<StartPage></StartPage>}></Route>
             <Route path="/Sosedi" element={<LoginPage></LoginPage>}></Route>
+            <Route path="/Sosedi/profile" element={<PersonalPage></PersonalPage>}></Route>
             <Route path="/Sosedi/chat" element={<ChatPage></ChatPage>}></Route>
-            <Route path="/Sosedi/test" element={<Test></Test>}></Route>
           </Routes>
         </div>
       </div>

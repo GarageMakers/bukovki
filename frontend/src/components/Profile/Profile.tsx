@@ -20,7 +20,7 @@ export default function Profile() {
                 </div>
             </header>
             <section className="profile__menu">
-              <Link to="/Sosedi" style={{textDecoration: "none"}}>
+              <Link to="/Sosedi/profile" style={{textDecoration: "none"}}>
               <div className="profile__menu__item profile__menu__item__active">
                 <ProfileSvg></ProfileSvg>
                 <h1 className="profile__menu__item__header">Профиль</h1>
