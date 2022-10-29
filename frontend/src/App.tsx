@@ -8,6 +8,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import AppealPage from "./pages/AppealPage/AppealPage";
 import CreateAppealPage from "./pages/CreateAppealPage/CreateAppealPage";
 import UKPersonalPage from "./pages/UKPersonalPage/UKPersonalPage";
+import UKAppealPage from "./pages/UKAppealPage/UKAppealPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="/Sosedi/appeal" element={<AppealPage></AppealPage>}></Route>
             <Route path="/Sosedi/appeal/create" element={<CreateAppealPage></CreateAppealPage>}></Route>
             <Route path="/Sosedi/UK/profile" element={<UKPersonalPage></UKPersonalPage>}></Route>
+            <Route path="/Sosedi/UK/appeal" element={<UKAppealPage></UKAppealPage>}></Route>
           </Routes>
         </div>
       </div>
