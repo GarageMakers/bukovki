@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bukovki/static/css/main.9e714ae5.css",
-    "main.js": "/bukovki/static/js/main.b3fa253d.js",
+    "main.js": "/bukovki/static/js/main.9e1afd14.js",
     "index.html": "/bukovki/index.html",
     "main.9e714ae5.css.map": "/bukovki/static/css/main.9e714ae5.css.map",
-    "main.b3fa253d.js.map": "/bukovki/static/js/main.b3fa253d.js.map"
+    "main.9e1afd14.js.map": "/bukovki/static/js/main.9e1afd14.js.map"
   },
   "entrypoints": [
     "static/css/main.9e714ae5.css",
-    "static/js/main.b3fa253d.js"
+    "static/js/main.9e1afd14.js"
   ]
 }
