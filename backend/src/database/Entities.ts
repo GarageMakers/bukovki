@@ -2,7 +2,7 @@ const typeorm = require("typeorm");
 @typeorm.Entity()
 export class managmentcompanies {
     @typeorm.PrimaryGeneratedColumn()
-    companyid: number
+    id: number
 
     @typeorm.OneToMany(type => usersgroups, group => group.company) groups: usersgroups[]
 
@@ -18,7 +18,7 @@ export class managmentcompanies {
 @typeorm.Entity()
 export class usersgroups {
     @typeorm.PrimaryGeneratedColumn()
-    groupid: number
+    id: number
 
     @typeorm.OneToMany(type => usersgroups, user => user.group) group: users[]
 
@@ -33,7 +33,7 @@ export class usersgroups {
 @typeorm.Entity()
 export class users {
     @typeorm.PrimaryGeneratedColumn()
-    userid: number
+    id: number
 
     @typeorm.OneToMany(type => achievements, achievement => achievement.user) achievement: achievements[] 
 
@@ -60,7 +60,7 @@ export class users {
 @typeorm.Entity()
 export class chatmessages {
     @typeorm.PrimaryGeneratedColumn()
-    messageid: number
+    id: number
 
     @typeorm.ManyToOne(type => users, user => user.chatmessages) user: users
 
@@ -74,7 +74,7 @@ export class chatmessages {
 @typeorm.Entity()
 export class achievements {
     @typeorm.PrimaryGeneratedColumn()
-    achievementid: number
+    id: number
 
     @typeorm.ManyToOne(type => users, user => user.achievements) user: users
 
@@ -87,7 +87,7 @@ export class achievements {
 @typeorm.Entity()
 export class appeals {
     @typeorm.PrimaryGeneratedColumn()
-    companyid: number
+    id: number
 
     @typeorm.ManyToOne(type => managmentcompanies, company => company.groups) company: managmentcompanies
 
