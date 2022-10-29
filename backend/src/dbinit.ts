@@ -1,13 +1,16 @@
-import dotenv from "dotenv";
-import { createConnection } from "typeorm";
+const dotenv = require("dotenv");
+const typeorm = require("typeorm");
 import { Achievements, Appeals, ManagmentCompanies, Users, UsersGroups } from "./database/Entities";
 
 dotenv.config();
 
-const dbConnection = () => {
+console.log("dbinit.ts is running")
+function dbConnection () {
 (async () => {
     // Initialize a connection pool against the database.
-    const connection = await createConnection({
+    try {
+      console.log("dbinit.ts is trying to connect to the database")
+    const connection = await typeorm.createConnection({
       type: "postgres",
       host: process.env.PGHOST,
       port: parseInt(process.env.PGPORT, 10),
@@ -16,6 +19,9 @@ const dbConnection = () => {
       database: process.env.PGDATABASE,
       entities: [ Users, ManagmentCompanies, UsersGroups, Appeals, Achievements ], 
     });
+  } catch (error) {
+    console.log("Error in dbinit.ts", error)
+  }
 });
 };
 
