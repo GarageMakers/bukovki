@@ -20,25 +20,25 @@ export default function Profile() {
                 </div>
             </header>
             <section className="profile__menu">
-              <Link to="/Sosedi/profile" style={{textDecoration: "none"}}>
+              <Link to="/sosedi/profile" style={{textDecoration: "none"}}>
               <div className="profile__menu__item profile__menu__item__active">
                 <ProfileSvg></ProfileSvg>
                 <h1 className="profile__menu__item__header">Профиль</h1>
               </div>
               </Link>
-              <Link to="/Sosedi/chat" style={{textDecoration: "none"}}>
+              <Link to="/sosedi/chat" style={{textDecoration: "none"}}>
               <div className="profile__menu__item">
                 <ChatSvg></ChatSvg>
                 <h1 className="profile__menu__item__header">Чат</h1>
               </div>
               </Link>
-              <Link to="/Sosedi/appeal" style={{textDecoration: "none"}}>
+              <Link to="/sosedi/appeal" style={{textDecoration: "none"}}>
               <div className="profile__menu__item">
                 <MessagesSvg></MessagesSvg>
                 <h1 className="profile__menu__item__header">Мои обращения</h1>
               </div>
               </Link>
-              <Link to="/Sosedi/payments" style={{textDecoration: "none"}}>
+              <Link to="/sosedi/payments" style={{textDecoration: "none"}}>
               <div className="profile__menu__item">
                 <TopSvg></TopSvg>
                 <h1 className="profile__menu__item__header">Мои счета</h1>
