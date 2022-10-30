@@ -4,6 +4,10 @@ import "./Appeal.scss"
 
 import PlusSvg from "./Image/PlusSvg";
 
+export const toCreateAppeal = () => {
+  window.location.href = "/Sosedi/appeal/create";
+};
+
 export default function Appeal() {
   return (
     <div>
@@ -54,7 +58,7 @@ export default function Appeal() {
                 <p className="appeal__content__item__status__text">Не решено</p>
             </div>
           </div>
-          <div className="appeal__content__button">
+          <div onClick={toCreateAppeal} className="appeal__content__button">
             <PlusSvg></PlusSvg>
             <p className="appeal__content__button__add">Добавить обращение</p>
           </div>
