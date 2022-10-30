@@ -17,7 +17,7 @@ router.get("/api/users", async (req, res) => {
 })
 
 router.get("/api/users/:id", async (req, res)=>{
-    const user    = await usersRepository.findOne({where: { id: req.params.id }})
+    const user    = await usersRepository.findOne({where: { id: req.params.userid }})
     res.json({
         message:"success",
         payload: user
