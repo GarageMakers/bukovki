@@ -4,6 +4,10 @@ import "./Login.scss"
 
 import HomeSvg from './Image/HomeSvg'
 
+export const toHome = () => {
+    window.location.href = "/Sosedi/profile";
+}
+
 export default function Login() {
   return (
     <div>
@@ -19,7 +23,7 @@ export default function Login() {
                     <h1 className="login__login__input__header">Пароль</h1>
                     <input type="text" className="login__login__input__input" placeholder="********************"/>
                 </div>
-                <button className="login__button">Войти</button>
+                <button onClick={toHome}  className="login__button">Войти</button>
             </div>
         </main>
     </div>
